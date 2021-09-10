@@ -1,0 +1,25 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: shiyan5 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\wuyu\AppData\Local\Temp\RSP5198.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/shiyan5.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\wuyu\Desktop\18111207248吴钰（实验五）\吴钰-实验五源程序\test.cpp"
+]
+Creating command line "cl.exe @C:\Users\wuyu\AppData\Local\Temp\RSP5198.tmp" 
+<h3>Output Window</h3>
+Compiling...
+test.cpp
+
+
+
+<h3>Results</h3>
+test.obj - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

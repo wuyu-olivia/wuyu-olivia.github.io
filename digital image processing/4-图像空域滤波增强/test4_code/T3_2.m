@@ -1,0 +1,28 @@
+%锐化滤波器验证实验2
+ImagePath ='D:\大三（下）专业课\数字图像处理\Test4\image\66.tif';
+InputImage = imread(ImagePath);
+InputImageGray = double(InputImage);
+figure(6);
+subplot(2,3,1);
+imshow(uint8(InputImageGray)); 
+title('Original');
+image = Laplace(InputImageGray,1);
+subplot(2,3,2);
+imshow(image); 
+title('Laplace');
+image = uint8(InputImageGray)-image;
+subplot(2,3,3);
+imshow(image); 
+title('空间域锐化后');
+image1 = Laplace(InputImageGray,2);
+subplot(2,3,4);
+imshow(image1); 
+title('PremageX');
+image2 = Laplace(InputImageGray,3);
+subplot(2,3,5);
+imshow(image2); 
+title('PremageY');
+image = image1+image2;
+subplot(2,3,6);
+imshow(image); 
+title('Premage');

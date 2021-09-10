@@ -1,0 +1,33 @@
+% 线性滤波器验证实验1
+ImagePath ='D:\大三（下）专业课\数字图像处理\Test4\image\11.tif';
+InputImage = imread(ImagePath);
+InputImageGray = double(InputImage);
+figure(1);
+subplot(2,3,1);
+imshow(uint8(InputImageGray)); 
+title('原图');
+model = [1 2 1;2 4 2;1 2 1];
+image = func1(InputImageGray,model);
+subplot(2,3,2);
+imshow(image); 
+title('3 X 3');
+model = [2 4 5 4 2;4 9 12 9 4;5 12 15 12 5;4 9 12 9 4;2 4 5 4 2;];
+image = func1(InputImageGray,model);
+subplot(2,3,3);
+imshow(image); 
+title('5 X 5');
+model = ones(9,9);      %3X3模板
+image = func1(InputImageGray,model);
+subplot(2,3,4);
+imshow(image); 
+title('9 X 9');
+model = ones(15,15);
+image = func1(InputImageGray,model);
+subplot(2,3,5);
+imshow(image); 
+title('15 X 15');
+model = ones(35,35);   
+image = func1(InputImageGray,model);
+subplot(2,3,6);
+imshow(image); 
+title('35 X 35');

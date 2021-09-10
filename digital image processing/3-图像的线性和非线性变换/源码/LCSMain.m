@@ -1,0 +1,34 @@
+clc,clear
+close all
+image = imread('D:\大三（下）专业课\数字图像处理\实验三\image\finger.bmp');
+pi = countP(image);
+para = [0.02,0.03];
+img2 = LCSfun (image, para, pi);
+para = [0.07,0.08];
+img3 = LCSfun (image, para, pi);
+para = [0.2,0.3];
+img4 = LCSfun (image, para, pi);
+subplot(2,4,1);
+imshow(image);
+title('原图像');
+count1 = countP(image);
+subplot(2,4,5);
+bar(count1);
+subplot(2,4,2);
+imshow(mat2gray(img2));
+title('0.02~0.03');
+count1 = countP(img2);
+subplot(2,4,6);
+bar(count1);
+subplot(2,4,3);
+imshow(mat2gray(img3));
+title('0.07~0.08');
+count1 = countP(img3);
+subplot(2,4,7);
+bar(count1);
+subplot(2,4,4);
+imshow(mat2gray(img4));
+title('0.2~0.3');
+count1 = countP(img4);
+subplot(2,4,8);
+bar(count1);

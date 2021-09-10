@@ -1,0 +1,8 @@
+python base.py [模型] [比赛数据路径] [版本号] [头部结构]
+#模型参数：deberta, roberta, electra
+#版本号：v1, v2...
+#头部结构：att_la, att_l1, att_l2, att_l4, att_l2_1, att_l4_1, cnn_la, cnn_l1, cnn_l2, cnn_l4, cnn_l2_1, cnn_l4_1
+python large.py [模型] [比赛数据路径] [版本号] [头部结构]
+#模型参数：deberta, roberta, electra
+#版本号：v1, v2...
+#头部结构：att_la, att_l1, att_l2, att_l4, att_l2_1, att_l4_1, cnn_la, cnn_l1, cnn_l2, cnn_l4, cnn_l2_1, cnn_l4_1
